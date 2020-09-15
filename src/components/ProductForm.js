@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 
 function ProductForm(props) {
-  const { onLinkClick, onSubmittingForm, buttonText, defaultName, defaultBrand, defaultFlavor, defaultPrice } = props;
+  const { onLinkClick, onSubmittingForm, buttonText, defaultName, defaultBrand, defaultFlavor, defaultPrice, defaultPints } = props;
 
   function handleSubmittingForm(event) {
     event.preventDefault();
@@ -14,6 +14,7 @@ function ProductForm(props) {
 
   return(
     <React.Fragment>
+      <h1>Add a new kombucha keg:</h1>
       <Form onSubmit={handleSubmittingForm}>
         <Form.Group controlId="name">
           <Form.Label>Product Name</Form.Label>
@@ -38,10 +39,10 @@ function ProductForm(props) {
           </InputGroup>
           <Form.Text className='text-muted'>Format as a decimal (e.g. 49.99 or 150.00)</Form.Text>
         </Form.Group>
-        {/* <Form.Group controlId="pints">
-          <Form.Label>Pints</Form.Label>
-          <Form.Control as='textarea' rows='5' defaultValue={defaultpints} />
-        </Form.Group> */}
+        <Form.Group controlId="pints">
+          <Form.Label>Remaining Pints: 124 to start</Form.Label>
+          <Form.Control type='text' placeholder='124' defaultValue={defaultPints} pattern='^\d+\'/>
+        </Form.Group>
         <Button className='mb-3' variant='success' type="submit" size='lg' block>{buttonText}</Button>
       </Form>
       <Button className='mb-3' variant='secondary' type='button' size='lg' block onClick={()=>onLinkClick("index")}>Back To Index</Button>
@@ -57,6 +58,7 @@ ProductForm.propTypes = {
   defaultBrand: PropTypes.string, 
   defaultFlavor: PropTypes.string, 
   defaultPrice: PropTypes.string,
+  defaultPints: PropTypes.string,
   defaultDescription: PropTypes.string
 }
 

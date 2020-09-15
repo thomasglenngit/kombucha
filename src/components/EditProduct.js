@@ -12,7 +12,7 @@ function EditProduct(props) {
       brand: event.target.brand.value,
       flavor: event.target.brand.value,
       price: event.target.price.value, 
-      // pints: event.target.pints.value,
+      pints: event.target.pints.value,
       id: product.id
     });
   }
@@ -27,7 +27,8 @@ function EditProduct(props) {
       defaultBrand={product.brand}
       defaultFlavor={product.flavor}
       defaultPrice={product.price}
-      defaultPints={product.pints} />
+      defaultPints={product.pints} 
+    />
   )
 }
 
