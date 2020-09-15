@@ -1,68 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align='center'><img width='900' height='450' src='https://www.chatelaine.com/wp-content/uploads/2017/02/Kombucha-Feat-800x800.jpg'><br>
 
-## Available Scripts
 
-In the project directory, you can run:
+**<h1 align = 'center'>MightyBootch**
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*<h2 align ='center'>Obey the Scobie!*
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+<h3 align ='center'>•<a href='#requirements'> Requirements</a> •<a href='#setup'> Setup</a> •<a href='#technologies-used'> Technologies</a> •<a href='#❤️contributors'> Contributors</a> •<a href='#known-bugs'> Bugs</a> •<a href='#protecting-your-data'> Protecting Data</a> •<a href='#cloning'> Cloning</a></h3>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3 align='center'>A REACT application for a concept Kombucha bar, </h3>
+<h3 align='center'>as a code review for the Epicodus school.</h3>
+<h3 align='center'>by Thomas Glenn</h3>
 
-### `npm run build`
+## Component Diagram ##
+<img width='900' height='450' src='./src/AppMap.png'><br>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# **REQUIREMENTS**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# **SETUP**
 
-### `npm run eject`
+## **CLONING**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Copy the repo link as shown in the image below
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone.gif 'How to clone repo')
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Paste the link in the field provided by VsCode as thown in the image below
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* You will be prompted to open the directory once you have cloned it. Select 'open'
 
-## Learn More
+![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone-github2.gif 'Cloning from Github within VSCode')
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# **PROTECTING YOUR DATA**
 
-### Code Splitting
+* Step 1: create a .gitignore file in the top level of your project directory. populate the file as shown in step 1 of the image below.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* Step 2: commit that .gitignore file (this prevents your sensitive information like your API key being shown to others). **DO NOT PROCEED UNTIL YOU DO THIS!**
 
-### Analyzing the Bundle Size
+![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/readme-image-3.jpg 'Set up instructions')
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<br>
 
-### Making a Progressive Web App
+# **TECHNOLOGIES USED**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+_[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)_
 
-### Advanced Configuration
+_[Bootstrap](https://getbootstrap.com/)_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+_[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)_
 
-### Deployment
+_[Webpack](https://webpack.js.org/)_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+_[Visual Studio Code](https://code.visualstudio.com/)_
 
-### `npm run build` fails to minify
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# **KNOWN BUGS**
+
+
+_**This app requires a counter for number of pints sold for any particular Kombucha type. This is not yet in place. as of:** 9.14.2020_
+
+<br>
+
+# **INSTALL**
+
+## **INSTALLING WITH NODE**
+
+
+with the root project folder open in your code editor, execute the following in your terminal:
+
+``cd ProjectName``
+
+``npm install``
+
+``npm run build``
+
+<br>
+
+# **❤️Contributors**
+
+[<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/thomas-glenn.jpeg' width='160px;'/><br /><sub><b>Thomas Glenn</b></sub>](https://www.linkedin.com/in/glennergy/)<br />
+
+<br>
+
+<br>
+
+![alt text][logo]
+
+[logo]: https://img.shields.io/bower/l/bootstrap 'MIT License'
