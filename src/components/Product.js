@@ -23,7 +23,7 @@ Product.propTypes = {
   brand: PropTypes.string,
   flavor: PropTypes.string,
   price: PropTypes.string,
-  pints: PropTypes.string,
+  pints: PropTypes.number,//Eureka! I tried 'int' and it doesn't like that.
   id: PropTypes.string,
   onProductClick: PropTypes.func
 }

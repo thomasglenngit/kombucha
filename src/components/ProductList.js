@@ -5,13 +5,14 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import Button from 'react-bootstrap/Button';
 
 function ProductList(props) {
-  const { productList, onLinkClick, onProductClick } = props;
+  const { productList, onSellClick, onLinkClick, onProductClick } = props;
   return (
     <React.Fragment>
       <CardColumns>
         {productList.map((products) => 
           <Product
             onProductClick={onProductClick}
+            // onSellClick={onSellClick}
             name={products.name}
             brand={products.brand}
             flavor={products.flavor}
@@ -21,7 +22,8 @@ function ProductList(props) {
             key={products.id} />
         )}
       </CardColumns>
-      <Button variant='primary' type='button' size='lg' block onClick={()=>onLinkClick('create')}>Order this Product</Button>
+      <Button variant='info' type='button' size='sm' block onClick={()=>onSellClick()}>Sell a Pint</Button>
+      <Button variant='primary' type='button' size='lg' block onClick={()=>onLinkClick('create')}>Order a Product</Button>
     </React.Fragment>
   )
 }

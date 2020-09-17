@@ -28,7 +28,6 @@ function ProductForm(props) {
           <Form.Label>Product Flavor</Form.Label>
           <Form.Control type='text' placeholder='Flavor' defaultValue={defaultFlavor}/>
         </Form.Group>
-
         <Form.Group controlId="price">
           <Form.Label>Price</Form.Label>
           <InputGroup>
@@ -40,8 +39,8 @@ function ProductForm(props) {
           <Form.Text className='text-muted'>Format as a decimal (e.g. 49.99 or 150.00)</Form.Text>
         </Form.Group>
         <Form.Group controlId="pints">
-          <Form.Label>Remaining Pints: 124 to start</Form.Label>
-          <Form.Control type='text' placeholder='124' defaultValue={defaultPints} pattern='^\d+\'/>
+          <Form.Label>Pints: 124 to start</Form.Label>
+          <Form.Text type='text' placeholder='124' defaultValue={defaultPints} />
         </Form.Group>
         <Button className='mb-3' variant='success' type="submit" size='lg' block>{buttonText}</Button>
       </Form>
@@ -58,7 +57,7 @@ ProductForm.propTypes = {
   defaultBrand: PropTypes.string, 
   defaultFlavor: PropTypes.string, 
   defaultPrice: PropTypes.string,
-  defaultPints: PropTypes.string,
+  defaultPints: PropTypes.number,
   defaultDescription: PropTypes.string
 }
 

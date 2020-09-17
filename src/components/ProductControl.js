@@ -10,9 +10,32 @@ class ProductControl extends React.Component {
     this.state = { 
       masterList: [],
       currentPage: 'index',
-      currentProduct: null
+      currentProduct: null,
+      pints: 1,
+      show: true,
+      max: 124,
+      min: 0
+
     };
   }
+ 
+  handleSellPint = (id) => {
+    const newMasterList = this.state.masterList.filter(products => products.id === id)[0];
+    let productToSell = this.state.pints;
+    if( productToSell !== 0 ) {
+      this.setState({ 
+        masterList: newMasterList,
+        currentProduct: productToSell - 1
+      }); 
+    } else {
+      return 'SOLD OUT';
+    }
+  }
+ 
+
+  // handleUpdateValue = (e) => {
+  //   this.setState({ quantity: e.target.value });
+  // }
 
   handleLinks = (pageName) => {
     this.setState({
@@ -74,6 +97,7 @@ class ProductControl extends React.Component {
       pageToDisplay = <ProductList
         productList = {this.state.masterList} 
         onLinkClick = {this.handleLinks}
+        onSellClick = {this.handleSellPint} //to sell pints
         onProductClick = {this.handleViewingDetails} />
     } else if (this.state.currentPage === 'create') {
       pageToDisplay = <AddProduct 

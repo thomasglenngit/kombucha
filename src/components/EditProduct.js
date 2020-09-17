@@ -4,7 +4,7 @@ import ProductForm from './ProductForm';
 
 
 function EditProduct(props) {
-  const { product, onLinkClick, onEditProduct } = props;
+  const { product, onLinkClick, onEditProduct} = props;
 
   function handleEditProduct(event) {
     onEditProduct({

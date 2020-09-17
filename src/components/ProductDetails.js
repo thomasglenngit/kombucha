@@ -14,7 +14,7 @@ function ProductDetails(props) {
       <p>{product.price}</p>
       <p>{product.pints}</p>
       <Button className='mb-3' variant='secondary' type='button' size='lg' block onClick={()=>onLinkClick('index')}>Back To Index</Button>
-      <Button className='mb-3' variant='warning' type='button' size='lg' block onClick={()=>onEditClick(product.id)}>Edit/Sell Pints</Button>
+      <Button className='mb-3' variant='warning' type='button' size='lg' block onClick={()=>onEditClick(product.id)}>Edit Product</Button>
       <Button variant='danger' type='button' size='lg' block onClick={()=>onDeleteClick(product.id)}>Delete</Button>
     </React.Fragment>
   );

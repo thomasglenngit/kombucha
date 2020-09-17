@@ -12,7 +12,7 @@ function AddProduct(props) {
       brand: event.target.brand.value,
       flavor: event.target.flavor.value,
       price: event.target.price.value,
-      // pints: event.target.pints.value,
+      pints: 124,
       id: v1()
     })
   }
